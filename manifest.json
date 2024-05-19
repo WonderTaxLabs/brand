@@ -1,0 +1,61 @@
+{
+  "background_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["focus-existing", "auto"]
+  },
+  "prefer_related_applications": false,
+  "scope_extensions": [
+    {"origin": "*.wonder.tax"}
+  ],
+  "screenshots" : [
+    {
+      "src": "assets/WTL-screenshot-portrait.png",
+      "sizes": "1170×2515",
+      "type": "image/png",
+      "form_factor": "portrait",
+      "label": "Hello WonderTax&reg; Labs"
+    },
+    {
+      "src": "assets/WTL-screenshot-wide.png",
+      "sizes": "2732×1160",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Hello WonderTax&reg; Labs"
+    }
+  ],
+  "related_applications": [],
+  "name": "Hello WonderTax® Labs",
+  "description": "App for WonderTax Labs public standards and guidelines as well as internal protected policies, practices, and procedures.",
+  "orientation": "any",
+  "scope": "https://hello.wonder.tax",
+  "short_name": "WonderTaxLabs",
+  "start_url": "https://hello.wonder.tax",
+  "theme_color": "#323335",
+  "icons": [
+    {
+      "src": "WTL.512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "WTL_maskable_icon_x512.png",
+      "type": "image/png",
+      "sizes": "48x48 72x72 96x96 128x128 102x192 384x384 512x512 682x682",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "aa02f581-acf6-4bdc-af32-6312e5685355",
+  "lang": "en",
+  "categories": [
+    "business"
+  ]
+}
