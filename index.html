@@ -236,15 +236,31 @@
         background-color: var(--inverse-surface);
       }
 
+      .flexlogo{
+        display:flex;
+        flex-direction: column-reverse;
+      }
+
       .force-light{
         background-color: #f8faf0;
         padding:2em;
         border: 1px solid var(--outline-variant);
+        color: #323335;
       }
+
+      .force-light div{
+        color: #323335;
+      }
+
       .force-dark{
         background-color: #323335;
         padding:2em;
         border: 1px solid var(--outline-variant);
+        color: #f8faf0;
+      }
+
+      .force-dark div{
+        color: #f8faf0;
       }
 
       .force-wtl-light-bottle{
@@ -472,7 +488,6 @@
       div {
         margin:.25em;
         border-radius: var(--radius-2);
-        min-width:200px;
         text-align: center;
         cursor: default;
         color: var(--on-surface);
@@ -520,6 +535,13 @@
       }
 
       @media screen and (min-width: 700px){
+        .flexlogo{
+          width: 100%;
+          justify-content: space-evenly;
+          display:flex;
+          flex-direction: row;
+        }
+
         .brand {
           height: 250px;
           width: 250px;
@@ -744,7 +766,7 @@
           <h2>The WonderTax Labs Brand</h2>
           WonderTax Labs stands for integrity, transparency, and professionalism. We value and respect our team members, platform partners, and customers. We take pride in our accountability and teamwork, believing "teamwork makes the dream work."
           <p/>
-          This document aims to provide information about how to best use the WonderTax Labs brand name and logo.This document explains how best to use our WonderTax Labs brand name and logo.
+          This document explains how best to use our WonderTax Labs brand name and logo.
           <p/>
           We encourage you to read this document carefully before using our brand name or logo. Your cooperation is highly appreciated!
           <p/>
@@ -768,34 +790,31 @@
         </div>
         <div class="card">
           <h2>WonderTax Labs Logo</h2>
-          <table width="100%">
-            <tr>
-              <td>
-                <div class="force-dark">
-                  <a href="assets/wtl-brand-mark-dark-mode.svg" target="_blank" title="Download WonderTax Labs logo for dark backgrounds">
-                    <svg class="brand" id="WonderTax-Labs-brandmark" data-name="WonderTax-Labs-brandmark" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 404 404">
-                      <path class="force-wtl-dark-bottle" d="M334.5,119.2l33.5-58c.8-1.4.3-3.3-1.1-4.1L270.9,1.6c-1.4-.8-3.3-.3-4.1,1.1l-33.5,58.1c-.6,1.1-1.9,1.7-3.1,1.5-70.6-11.7-141.3,21.5-177.1,83.7-47.4,82.1-19.2,187.5,63,234.9,82.3,47.5,187.5,19.3,234.9-63,35.8-62.1,29.3-139.9-16.1-195.2-.8-1-.9-2.3-.3-3.4h0ZM133.2,351c-65.8-38-88.3-122.2-50.3-188,12-20.8,29.2-38.1,50-50.1h.2c29.3-17.1,63.9-22.6,97.1-15.7l17.4,3.6c1.3.3,2.6-.3,3.2-1.4l28.7-49.7c.8-1.4,2.7-1.9,4.1-1.1l36.5,21.1c1.4.8,1.9,2.7,1.1,4.1l-28.7,49.6c-.6,1.1-.5,2.5.4,3.5l11.8,13.2c50.6,56.7,45.8,143.6-10.9,194.3-44.3,39.6-109,46.3-160.5,16.6h0Z"/>
-                      <path class="wtl-inside" d="M173.5,339.9c69.6,17.3,111.8-32,121-51.2.8-1.8-1.4-3.4-2.7-1.9-10.2,11.5-30.3,21.9-55.2,14.4-27.2-8.7-42.8-37.1-35.5-64.7,7.7-28.5-9.3-57.9-37.8-65.5-27.5-7.8-57.5,8-66,39.8-14,55,19,113.9,76.2,129h0Z"/>
-                    </svg>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <div class="force-light">
-                  <a href="assets/wtl-brand-mark.svg" target="_blank" title="Download WonderTax Labs logo for light backgrounds">
-                    <svg class="brand" id="WonderTax-Labs-brandmark" data-name="WonderTax-Labs-brandmark" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 404 404">
-                      <path class="force-wtl-light-bottle" d="M334.5,119.2l33.5-58c.8-1.4.3-3.3-1.1-4.1L270.9,1.6c-1.4-.8-3.3-.3-4.1,1.1l-33.5,58.1c-.6,1.1-1.9,1.7-3.1,1.5-70.6-11.7-141.3,21.5-177.1,83.7-47.4,82.1-19.2,187.5,63,234.9,82.3,47.5,187.5,19.3,234.9-63,35.8-62.1,29.3-139.9-16.1-195.2-.8-1-.9-2.3-.3-3.4h0ZM133.2,351c-65.8-38-88.3-122.2-50.3-188,12-20.8,29.2-38.1,50-50.1h.2c29.3-17.1,63.9-22.6,97.1-15.7l17.4,3.6c1.3.3,2.6-.3,3.2-1.4l28.7-49.7c.8-1.4,2.7-1.9,4.1-1.1l36.5,21.1c1.4.8,1.9,2.7,1.1,4.1l-28.7,49.6c-.6,1.1-.5,2.5.4,3.5l11.8,13.2c50.6,56.7,45.8,143.6-10.9,194.3-44.3,39.6-109,46.3-160.5,16.6h0Z"/>
-                      <path class="wtl-inside" d="M173.5,339.9c69.6,17.3,111.8-32,121-51.2.8-1.8-1.4-3.4-2.7-1.9-10.2,11.5-30.3,21.9-55.2,14.4-27.2-8.7-42.8-37.1-35.5-64.7,7.7-28.5-9.3-57.9-37.8-65.5-27.5-7.8-57.5,8-66,39.8-14,55,19,113.9,76.2,129h0Z"/>
-                    </svg>
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><div>Dark Background</div></td>
-              <td><div>Light Background</div></td>
-            </tr>
-          </table>
+
+          <div class="flexlogo">
+
+            <div class="force-dark">
+              <a href="assets/wtl-brand-mark-dark-mode.svg" target="_blank" title="Download WonderTax Labs logo for dark backgrounds">
+                <svg class="brand" id="WonderTax-Labs-brandmark" data-name="WonderTax-Labs-brandmark" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 404 404">
+                  <path class="force-wtl-dark-bottle" d="M334.5,119.2l33.5-58c.8-1.4.3-3.3-1.1-4.1L270.9,1.6c-1.4-.8-3.3-.3-4.1,1.1l-33.5,58.1c-.6,1.1-1.9,1.7-3.1,1.5-70.6-11.7-141.3,21.5-177.1,83.7-47.4,82.1-19.2,187.5,63,234.9,82.3,47.5,187.5,19.3,234.9-63,35.8-62.1,29.3-139.9-16.1-195.2-.8-1-.9-2.3-.3-3.4h0ZM133.2,351c-65.8-38-88.3-122.2-50.3-188,12-20.8,29.2-38.1,50-50.1h.2c29.3-17.1,63.9-22.6,97.1-15.7l17.4,3.6c1.3.3,2.6-.3,3.2-1.4l28.7-49.7c.8-1.4,2.7-1.9,4.1-1.1l36.5,21.1c1.4.8,1.9,2.7,1.1,4.1l-28.7,49.6c-.6,1.1-.5,2.5.4,3.5l11.8,13.2c50.6,56.7,45.8,143.6-10.9,194.3-44.3,39.6-109,46.3-160.5,16.6h0Z"/>
+                  <path class="wtl-inside" d="M173.5,339.9c69.6,17.3,111.8-32,121-51.2.8-1.8-1.4-3.4-2.7-1.9-10.2,11.5-30.3,21.9-55.2,14.4-27.2-8.7-42.8-37.1-35.5-64.7,7.7-28.5-9.3-57.9-37.8-65.5-27.5-7.8-57.5,8-66,39.8-14,55,19,113.9,76.2,129h0Z"/>
+                </svg>
+              </a>
+              <div><p/>Dark Background</div>
+            </div>
+
+            <div class="force-light">
+              <a href="assets/wtl-brand-mark.svg" target="_blank" title="Download WonderTax Labs logo for light backgrounds">
+                <svg class="brand" id="WonderTax-Labs-brandmark" data-name="WonderTax-Labs-brandmark" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 404 404">
+                  <path class="force-wtl-light-bottle" d="M334.5,119.2l33.5-58c.8-1.4.3-3.3-1.1-4.1L270.9,1.6c-1.4-.8-3.3-.3-4.1,1.1l-33.5,58.1c-.6,1.1-1.9,1.7-3.1,1.5-70.6-11.7-141.3,21.5-177.1,83.7-47.4,82.1-19.2,187.5,63,234.9,82.3,47.5,187.5,19.3,234.9-63,35.8-62.1,29.3-139.9-16.1-195.2-.8-1-.9-2.3-.3-3.4h0ZM133.2,351c-65.8-38-88.3-122.2-50.3-188,12-20.8,29.2-38.1,50-50.1h.2c29.3-17.1,63.9-22.6,97.1-15.7l17.4,3.6c1.3.3,2.6-.3,3.2-1.4l28.7-49.7c.8-1.4,2.7-1.9,4.1-1.1l36.5,21.1c1.4.8,1.9,2.7,1.1,4.1l-28.7,49.6c-.6,1.1-.5,2.5.4,3.5l11.8,13.2c50.6,56.7,45.8,143.6-10.9,194.3-44.3,39.6-109,46.3-160.5,16.6h0Z"/>
+                  <path class="wtl-inside" d="M173.5,339.9c69.6,17.3,111.8-32,121-51.2.8-1.8-1.4-3.4-2.7-1.9-10.2,11.5-30.3,21.9-55.2,14.4-27.2-8.7-42.8-37.1-35.5-64.7,7.7-28.5-9.3-57.9-37.8-65.5-27.5-7.8-57.5,8-66,39.8-14,55,19,113.9,76.2,129h0Z"/>
+                </svg>
+              </a>
+              
+            </div>
+                
+          </div><div><p/>Light Background</div>
+
           <p/>
           The WonderTax Labs logo is distributed and licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
           <p/>
@@ -813,6 +832,144 @@
               </ol>
             </li>
           </ol>
+        </div>
+        <div>
+          <h2>WonderTax Labs Brand Colors</h2>
+
+          <div class="flexlogo">
+
+            <div class="force-dark">
+              <div>Dark Background</div>
+              <table>
+                <tr>
+                  <td><div>Primary</div></td>
+                  <td style="background-color:#7edd47;"><div style="color:#323335;">#7edd47</div></td>
+                </tr>
+                <tr>
+                  <td><div>Secondary</div></td>
+                  <td style="background-color:#ffffff;"><div style="color:#323335;">#ffffff</div></td>
+                </tr>
+              </table>
+              
+            </div>
+
+            <div class="force-light">
+              <div>Light Background</div>
+              <table>
+                <tr>
+                  <td><div>Primary</div></td>
+                  <td style="background-color:#7edd47;"><div style="color:#323335;">#7edd47</div></td>
+                </tr>
+                <tr>
+                  <td><div>Secondary</div></td>
+                  <td style="background-color:#323335;"><div style="color:#ffffff;">#323335</div></td>
+                </tr>
+              </table>
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <h2>WonderTax Labs Brand Palette</h2>
+
+          <div class="flexlogo">
+
+            <div class="force-dark">
+              <div>Dark Background</div>
+              <table>
+                <tr>
+                  <td><div>Primary</div></td>
+                  <td style="background-color:#aad291;"><div style="color:#173807;">#aad291</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Primary</div></td>
+                  <td style="background-color:#173807;"><div style="color:#aad291;">#173807</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Primary Container</div></td>
+                  <td style="background-color:#2d4f1c;"><div style="color:#c5efab;">#2d4f1c</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Primary Container</div></td>
+                  <td style="background-color:#c5efab;"><div style="color:#2d4f1c;">#c5efab</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Secondary</div></td>
+                  <td style="background-color:#abd28f;"><div style="color:#193706;">#abd28f</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Secondary</div></td>
+                  <td style="background-color:#193706;"><div style="color:#abd28f;">#193706</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Secondary Container</div></td>
+                  <td style="background-color:#2f4f1b;"><div style="color:#c7eea9;">#2f4f1b</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Secondary Container</div></td>
+                  <td style="background-color:#c7eea9;"><div style="color:#2f4f1b;">#c7eea9</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Tertiary</div></td>
+                  <td style="background-color:#9ccbfb;"><div style="color:#003354;">#9ccbfb</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Tertiary</div></td>
+                  <td style="background-color:#003354;"><div style="color:#9ccbfb;">#003354</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Tertiary Container</div></td>
+                  <td style="background-color:#104a73;"><div style="color:#cee5ff;">#104a73</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Tertiary Container</div></td>
+                  <td style="background-color:#cee5ff;"><div style="color:#104a73;">#cee5ff</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Error</div></td>
+                  <td style="background-color:#ecc06c;"><div style="color:#412d00;">#ecc06c</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Error</div></td>
+                  <td style="background-color:#412d00;"><div style="color:#ecc06c;">#412d00</div></td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                  <td><div>Error Container</div></td>
+                  <td style="background-color:#5d4200;"><div style="color:#ffdea4;">#5d4200</div></td>
+                </tr>
+                <tr>
+                  <td><div>On Error Container</div></td>
+                  <td style="background-color:#ffdea4;"><div style="color:#5d4200;">#ffdea4</div></td>
+                </tr>
+              </table>
+              
+            </div>
+
+            <div class="force-light">
+              <div>Light Background</div>
+              <table>
+                <tr>
+                  <td><div>Primary</div></td>
+                  <td style="background-color:#7edd47;"><div style="color:#323335;">#7edd47</div></td>
+                </tr>
+                <tr>
+                  <td><div>Secondary</div></td>
+                  <td style="background-color:#323335;"><div style="color:#ffffff;">#323335</div></td>
+                </tr>
+              </table>
+              
+            </div>
+
+          </div>
         </div>
     </div>
   </body>
