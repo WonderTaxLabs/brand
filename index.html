@@ -460,10 +460,13 @@
       }
 
       .correct{
-        color:#7EDD47;
+        color: var(--brand-primary);
+      }
+      .acceptable{
+        color: var(--tertiary);
       }
       .incorrect{
-        color:var(--error);
+        color: var(--error);
       }
 
       ul{
@@ -785,7 +788,7 @@
               Our registered trademark is on the term "WonderTax" &mdash; <b>not</b> on the longer "WonderTax Labs"
               <ul>
                 <li><b class="correct">Correct:</b> WonderTax<sup>&reg;</sup> Labs</li>
-                <li><b style="var(--teriary);">Acceptable:</b> WonderTax&reg; Labs</li>
+                <li><b class="acceptable">Acceptable:</b> WonderTax&reg; Labs</li>
                 <li><b class="incorrect">Incorrect:</b> WonderTax Labs&reg;</li>
               </ul>
             </li>
