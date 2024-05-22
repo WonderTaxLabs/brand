@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="manifest" href="/manifest.json"/>
     <link rel="shortcut icon" type="image/png" href="/WTL_maskable_icon_x512.png"/>
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://use.typekit.net/wxd6mxf.css"/>
     <script>
       //browser user-gent sniffer
@@ -89,7 +89,7 @@
           --surface-bright: var(--m3-sys-light-surface-bright); 
           --surface-dim: var(--m3-sys-light-surface-dim);   
       }
-      
+/* Start no longer used? */      
       .primary-container {
         background-color: var(--primary-container);
         color: var(--on-primary-container);
@@ -216,7 +216,7 @@
         color: var(--on-surface);
         opacity: 50%;
       }
-
+/* end no longer used */
       .background-inverse{
         background-color: var(--inverse-surface);
       }
@@ -265,7 +265,6 @@
       
       a {
         color: var(--tertiary);
-
       }
 
       code{
@@ -275,6 +274,7 @@
       /* for Javascript theme changing */
       [data-theme="dark"] {
         /* color-scheme: dark; */
+        --brand-secondary: var(--brand-secondary);
         --primary: var(--m3-sys-dark-primary); 
         --on-primary: var(--m3-sys-dark-on-primary); 
         --primary-container: var(--m3-sys-dark-primary-container); 
@@ -420,7 +420,7 @@
               --surface-bright: var(--m3-sys-dark-surface-bright); 
               --surface-dim: var(--m3-sys-dark-surface-dim);
           }
-          
+/* start no longer used */          
         .surface-container-highest{
           box-shadow: 0 19px 38px rgba(199, 238, 169,0.30), 0 15px 12px rgba(199, 238, 169,0.22);
         }
@@ -436,6 +436,7 @@
         .surface-container-lowest{
           box-shadow: 0 1px 3px rgba(199, 238, 169,0.12), 0 1px 2px rgba(199, 238, 169,0.24);
         }
+  /* end no longer used */
         a {
           color: var(--on-primary-container);
         }
@@ -575,7 +576,8 @@
         box-shadow: var(--shadow);
         animation: var(--animation-fade-in);
         transition: 0.3s;
-        max-width:800px;
+        width: 80%;
+        max-width: 800px;
         text-align:left;
         padding:1em;
       }
