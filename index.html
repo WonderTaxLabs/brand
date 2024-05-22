@@ -29,6 +29,7 @@
       :root {
           /* default (light) colors */
           /* color-scheme: light;*/
+          --brand-secondary: var(--brand-secondary);
           --primary: var(--m3-sys-light-primary); 
           --on-primary: var(--m3-sys-light-on-primary); 
           --primary-container: var(--m3-sys-light-primary-container); 
@@ -576,35 +577,8 @@
         max-width:800px;
         text-align:left;
         padding:1em;
-/*
-        &:hover {
-          background-color: var(--surface-container-high);
-          box-shadow: var(--shadow-3);
-        }
-*/
       }
-      /*
-      @media (prefers-color-scheme: dark){
-        body{
-          background-color: var(--jet);
-          color: var(--honeydew);
-        }
-        a{
-          color: var(--sgbus-green);
-        }
-        .dark-light{
-          background-color: var(--honeydew);
-          color: var(--jet);
-        }
-        .card{
-          background-color: #000000;
-          color: var(--snow);
-        }
-        .a-row div{
-          color: var(--jet);
-        }
-      }
-      */
+
 
       /* Portrait */
       @media screen and (orientation:portrait) and (max-width: 500px) {
