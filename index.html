@@ -298,6 +298,9 @@
       ul{
         list-style-type: none;
       }
+
+      /* this could be a usabiliy problem, but i dont like auto focus visual artifact on the footnote upon load */
+      :focus { outline: none; }
       
       body {
         background-color: var(--background);
