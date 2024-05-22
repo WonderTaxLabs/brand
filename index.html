@@ -88,24 +88,8 @@
           --surface-container-low: var(--m3-sys-light-surface-container-low); 
           --surface-container-lowest: var(--m3-sys-light-surface-container-lowest); 
           --surface-bright: var(--m3-sys-light-surface-bright); 
-          --surface-dim: var(--m3-sys-light-surface-dim);
-          /*
-          --sgbus-green: #7eed47ff;
-          --asparagus: #669647ff;
-          --jet: #323335ff;
-          --honeydew: #E4F3E6ff;
-          --snow: #f7f0f0ff;
-          --sunglow: #ffc857ff;
-          /* accent options */
-          /*
-          --lavender: #d8e4ffff;
-          --non-photo-blue: #A3E7FCff;
-          --maya-blue: #78C3FBff;
-          --chefchaouen-blue: #5386E4ff;
-          --periwinkle: #B4ADEAff;
-          */
+          --surface-dim: var(--m3-sys-light-surface-dim);   
       }
-
       
       .primary-container {
         background-color: var(--primary-container);
@@ -279,10 +263,6 @@
       .wtl-inside {
         fill: var(--brand-primary);
       }
-
-      html[data-useragent*='BrowseHere'] body {
-        background-color: tan;
-      }
       
       a {
         color: var(--tertiary);
@@ -296,8 +276,6 @@
       /* for Javascript theme changing */
       [data-theme="dark"] {
         /* color-scheme: dark; */
-        --brand-primary: var(--brand-primary);
-        --brand-secondary: var(--brand-secondary);
         --primary: var(--m3-sys-dark-primary); 
         --on-primary: var(--m3-sys-dark-on-primary); 
         --primary-container: var(--m3-sys-dark-primary-container); 
@@ -384,8 +362,6 @@
       @media (prefers-color-scheme: dark){
           :root {
               /* color-scheme: dark; */
-              --brand-primary: var(--brand-primary);
-              --brand-secondary: var(--brand-secondary);
               --primary: var(--m3-sys-dark-primary); 
               --on-primary: var(--m3-sys-dark-on-primary); 
               --primary-container: var(--m3-sys-dark-primary-container); 
